@@ -1,0 +1,178 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  animation: slideIn 0.5s ease forwards;
+  z-index: 200;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.modal-content h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.order-summary-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.order-summary-list li {
+  font-size: 16px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.order-total {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+.delivery-method-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.delivery-method-buttons button {
+  width: 48%;
+  padding: 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delivery-method-buttons button.active {
+  background-color: #f2994a;
+  color: white;
+  border-color: #f2994a;
+}
+
+.delivery-method-buttons button:hover {
+  background-color: #f2d299;
+}
+
+.personal-info-section {
+  margin-bottom: 20px;
+}
+
+.personal-info-section input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.payment-method-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.payment-method-buttons button {
+  width: 48%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.payment-method-buttons button.active {
+  background-color: #f2994a;
+  color: white;
+  border-color: #f2994a;
+}
+
+.payment-method-buttons button:hover {
+  background-color: #f2d299;
+}
+
+hr {
+  margin: 20px 0;
+  border: 1px solid #e0e0e0;
+}
+
+.place-order-button {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.place-order-button:hover {
+  background-color: #333;
+}
+
+.order-success {
+  text-align: center;
+}
+
+.order-success h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.order-success p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.order-success button {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.order-success button:hover {
+  background-color: #333;
+}
